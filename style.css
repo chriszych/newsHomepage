@@ -27,7 +27,7 @@ body {
 }
 
 .logoIcon{
-    background-image: url(/assets/images/logo.svg);
+    background-image: url(./assets/images/logo.svg);
     width: 65px;
     height: 40px;
     background-position:left;
@@ -70,7 +70,7 @@ main{
 }
 
 .mainPicture{
-    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
     background-size: cover;
     grid-column: span 2;
     order: 1;
@@ -193,17 +193,17 @@ main{
 
 .bn01 {
     order: 5;
-    background-image: url(/assets/images/image-retro-pcs.jpg);
+    background-image: url(./assets/images/image-retro-pcs.jpg);
 }
 
 .bn02 {
     order: 6;
-    background-image: url(/assets/images/image-top-laptops.jpg);
+    background-image: url(./assets/images/image-top-laptops.jpg);
 }
 
 .bn03 {
     order: 7;
-    background-image: url(/assets/images/image-gaming-growth.jpg);
+    background-image: url(./assets/images/image-gaming-growth.jpg);
 }
 
 footer{
@@ -253,7 +253,7 @@ footer{
 
     .mainPicture{
     grid-column: span 1;
-    background-image: url(/assets/images/image-web-3-mobile.jpg);
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
     }
 
     .menuItems{
