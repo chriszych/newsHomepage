@@ -1,0 +1,341 @@
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin : auto auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.webMenu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 1114px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 50px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logoIcon{
+    background-image: url(/assets/images/logo.svg);
+    width: 65px;
+    height: 40px;
+    background-position:left;
+    background-size: cover;
+}
+
+.menuIcon {
+    visibility: hidden;
+}
+
+.closebtn {
+    visibility: hidden;
+}
+
+.menuItems{
+    /*visibility: hidden;*/
+    width: 430px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.menuItems li{
+    list-style-type: none;
+}
+
+.menuItems a{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(233, 8%, 79%)
+}
+.menuItems a:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px);
+    grid-template-rows: minmax(auto, 300px) minmax(auto, 160px) minmax(auto, 160px);
+    gap: 2rem;
+}
+
+.mainPicture{
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    grid-column: span 2;
+    order: 1;
+}
+
+.sideNews{
+    order: 2;
+    grid-row: span 2;
+    background-color: black;
+    color: hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sideNews h1 {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    color: hsl(35, 77%, 62%);
+    font-size: 2.4rem;
+}
+
+.sideNews h3 {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.sideNews a {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.sideNews a:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.sideSection{
+    margin: 0 1.5rem;
+    font-size: 15px;
+    padding-bottom: 2rem;;
+    border-bottom: solid 1px hsl(236, 13%, 42%);
+}
+
+.sideNews p {
+    color: hsl(236, 13%, 42%);
+    margin: 0;
+}
+
+.mainTopic{
+    order: 3; 
+}
+
+.mainTopic h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.mainText{
+    order: 4;
+    margin: 0;
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+.mainText p{
+    margin: 0;
+}
+
+.readMore{
+    margin-top: 20px;
+    background-color: hsl(5, 85%, 63%);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    width: 185px;
+    height: 50px;
+    border: none;
+}
+.readMore:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    color: hsl(233, 8%, 79%);
+}
+
+.bottomNews{ 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding-left: 120px;
+    padding-right: 20px;
+    margin-top: 2rem;
+}
+
+.bottomNews h2{
+    color: hsl(5, 85%, 63%);
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0 0;
+    line-height: 0.9;
+}
+
+.bottomNews h3{
+    font-size: 17px;
+    margin: 0.9rem 0;
+    font-weight: 900;
+}
+
+.bottomNews p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.bottomNews a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%)
+}
+.bottomNews a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.bn01 {
+    order: 5;
+    background-image: url(/assets/images/image-retro-pcs.jpg);
+}
+
+.bn02 {
+    order: 6;
+    background-image: url(/assets/images/image-top-laptops.jpg);
+}
+
+.bn03 {
+    order: 7;
+    background-image: url(/assets/images/image-gaming-growth.jpg);
+}
+
+footer{
+    visibility: hidden;
+    order: 8;
+}
+
+@media (max-width: 975px) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 2fr 1fr;
+    }
+    .mainTopic{
+        order: 2; 
+    }
+    .mainText{
+        order: 4;
+    }
+    .sideNews{
+        order: 3;
+    }
+
+
+}
+
+
+@media (max-width: 675px) {
+
+    .menuIcon {
+        visibility:visible;
+    }
+    .closebtn {
+        visibility:visible;
+    }
+
+
+
+
+    main{
+        grid-template-columns: 1fr;    
+        /*grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px);*/
+        /*grid-template-rows: minmax(auto, 300px) minmax(auto, 160px) minmax(auto, 160px);*/
+        grid-template-rows: minmax(auto, 300px) minmax(auto, 120px) minmax(auto, 160px) minmax(auto, 200px) minmax(auto, 300px) minmax(auto, 126px) minmax(auto, 126px) minmax(auto, 126px);
+        margin: 15px;
+    }
+
+    .mainPicture{
+    grid-column: span 1;
+    background-image: url(/assets/images/image-web-3-mobile.jpg);
+    }
+
+    .menuItems{
+        margin: 0;
+        padding: 0;
+    }
+
+    .webMenu{
+        width: 350px;
+        margin: 1.5rem 1rem;
+        height: 2rem;
+    }
+
+    .mainTopic{
+        order: 2; 
+    }
+    .mainText{
+        order: 3;
+        padding: 0;
+    }
+    .sideNews{
+        order: 4;
+    }
+
+    .bottomNews{ 
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .sideSection{
+        margin: 0 1rem;
+    }
+
+    .sideNews h1 {
+        margin: 0 1rem;
+    }
+    .mainTopic h1{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .logoIcon{
+        width: 50px;
+        height: 30px;
+    }
+
+
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    display: block;
+  }
+  
+  .sidenav a {
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: hsl(35, 77%, 62%);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+  }
+}
