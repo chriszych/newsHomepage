@@ -15,13 +15,9 @@ body {
 }
 
 .webMenu{
+    order: 0;
+    grid-column: span 3;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 1114px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 50px;
     justify-content:space-between;
     align-items: center;
 }
@@ -43,20 +39,22 @@ body {
 }
 
 .menuItems{
-    /*visibility: hidden;*/
     width: 430px;
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 
 .menuItems li{
     list-style-type: none;
+    align-items: end;
 }
 
 .menuItems a{
     text-decoration: none;
     font-weight: 700;
-    color: hsl(233, 8%, 79%)
+    color: hsl(233, 8%, 79%);
+    align-items: end;
 }
 .menuItems a:hover{
     color: hsl(35, 77%, 62%);
@@ -64,9 +62,10 @@ body {
 
 main{
     display: grid;
-    grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px);
-    grid-template-rows: minmax(auto, 300px) minmax(auto, 160px) minmax(auto, 160px);
+    grid-template-columns: repeat(3, minmax(auto, 350px));
+    grid-template-rows: minmax(auto, 15%) minmax(auto, 40%) minmax(auto, 20%) minmax(auto, 20%);
     gap: 2rem;
+    margin: 15px;
 }
 
 .mainPicture{
@@ -110,6 +109,10 @@ main{
     font-size: 15px;
     padding-bottom: 2rem;;
     border-bottom: solid 1px hsl(236, 13%, 42%);
+}
+
+.sideFooter{
+    border-bottom: none;
 }
 
 .sideNews p {
@@ -159,7 +162,7 @@ main{
     background-position: left;
     background-repeat: no-repeat;
     background-size:contain;
-    padding-left: 120px;
+    padding-left: 30%;
     padding-right: 20px;
     margin-top: 2rem;
 }
@@ -194,16 +197,19 @@ main{
 .bn01 {
     order: 5;
     background-image: url(./assets/images/image-retro-pcs.jpg);
+    background-size:25%;
 }
 
 .bn02 {
     order: 6;
     background-image: url(./assets/images/image-top-laptops.jpg);
+    background-size:25%;
 }
 
 .bn03 {
     order: 7;
     background-image: url(./assets/images/image-gaming-growth.jpg);
+    background-size:25%;
 }
 
 footer{
@@ -215,7 +221,7 @@ footer{
 
     main{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr 2fr 1fr;
+        grid-template-rows: 0.25fr 2fr 1fr 2fr 1fr;
     }
     .mainTopic{
         order: 2; 
@@ -226,12 +232,13 @@ footer{
     .sideNews{
         order: 3;
     }
-
+    .webMenu{
+        grid-column: span 2;
+    }
 
 }
 
-
-@media (max-width: 675px) {
+@media (max-width: 575px) {
 
     .menuIcon {
         visibility:visible;
@@ -241,14 +248,11 @@ footer{
     }
 
 
-
-
     main{
         grid-template-columns: 1fr;    
-        /*grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px);*/
-        /*grid-template-rows: minmax(auto, 300px) minmax(auto, 160px) minmax(auto, 160px);*/
-        grid-template-rows: minmax(auto, 300px) minmax(auto, 120px) minmax(auto, 160px) minmax(auto, 200px) minmax(auto, 300px) minmax(auto, 126px) minmax(auto, 126px) minmax(auto, 126px);
+        grid-template-rows: minmax(auto, 50px) minmax(300px, auto) minmax(120px, auto) minmax(160px, auto) minmax(200px, auto) minmax(300px, auto) minmax(126px, auto) minmax(126px, auto) minmax(126px, auto);
         margin: 15px;
+        gap: 20px;
     }
 
     .mainPicture{
@@ -262,9 +266,8 @@ footer{
     }
 
     .webMenu{
-        width: 350px;
-        margin: 1.5rem 1rem;
-        height: 2rem;
+        grid-column: span 1;
+        margin: 0.5rem 1rem;
     }
 
     .mainTopic{
@@ -299,8 +302,6 @@ footer{
         height: 30px;
     }
 
-
-
     .sidenav {
     height: 100%;
     width: 0;
@@ -312,7 +313,6 @@ footer{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-
     display: block;
   }
   
