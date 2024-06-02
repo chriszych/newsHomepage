@@ -14,7 +14,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Overview
 
-News page based on CSS Grid with responsivity and some links. Also equiooed with mobile side menu.
+News page based on CSS Grid with responsivness and some active links. Also equipped with mobile side menu.
 
 ### The challenge
 
