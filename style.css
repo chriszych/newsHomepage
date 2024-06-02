@@ -20,6 +20,8 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    margin-top: 82px;
+    margin-bottom: 36px;
 }
 
 .logoIcon{
@@ -39,7 +41,7 @@ body {
 }
 
 .menuItems{
-    width: 430px;
+    width: 510px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -48,6 +50,7 @@ body {
 .menuItems a{
     text-decoration: none;
     font-weight: 700;
+    font-size: 14px;
     color: hsl(233, 8%, 79%);
     align-items: end;
 }
@@ -58,7 +61,7 @@ body {
 main{
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 350px));
-    grid-template-rows: minmax(auto, 15%) minmax(auto, 40%) minmax(auto, 20%) minmax(auto, 20%);
+    grid-template-rows: minmax(auto, 16%) minmax(auto, 40%) minmax(auto, 20%) minmax(auto, 20%);
     gap: 2rem;
     margin: 15px;
 }
@@ -88,6 +91,7 @@ main{
 
 .sideNews h2 {
     margin: 1.5rem 0 0.5rem 0;
+    font-size: 1rem;
 }
 
 .sideNews a {
@@ -115,8 +119,8 @@ main{
     margin: 0;
 }
 
-
-.mainTopic h1{
+.mainTitle {
+   
     order: 3;
     font-size: 3.5rem;
     font-weight: 900;
@@ -234,6 +238,10 @@ footer{
     }
     .webMenu{
         grid-column: span 2;
+        margin: 0.5rem 1rem;
+    }
+    .menuItems{
+        width: 400px;
     }
 
 }
