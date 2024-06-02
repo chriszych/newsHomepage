@@ -45,11 +45,6 @@ body {
     align-items: center;
 }
 
-.menuItems li{
-    list-style-type: none;
-    align-items: end;
-}
-
 .menuItems a{
     text-decoration: none;
     font-weight: 700;
@@ -120,11 +115,9 @@ main{
     margin: 0;
 }
 
-.mainTopic{
-    order: 3; 
-}
 
 .mainTopic h1{
+    order: 3;
     font-size: 3.5rem;
     font-weight: 900;
     margin: 0;
@@ -215,6 +208,13 @@ main{
 footer{
     visibility: hidden;
     order: 8;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 @media (max-width: 975px) {
