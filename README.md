@@ -12,9 +12,9 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+News page based on CSS Grid with responsivity and some links. Also equiooed with mobile side menu.
 
 ### The challenge
 
@@ -29,13 +29,6 @@ Users should be able to:
 ![Toblet / mobile leve1 Screenshot](./assets/screenshots/tablet_scr02.jpg)
 ![Phone / mobile leve2 Screenshot](./assets/screenshots/mobile_scr03.jpg)
 ![Mobile menu Screenshot](./assets/screenshots/mobileMenu_scr04.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
 
 ### Links
 
